@@ -1,0 +1,70 @@
+section{
+    margin-top: 60px;
+}
+section h2, h3{
+font-size: 30px;
+text-align: center;
+color:#640269;
+text-shadow: 1px  0px 0px black,
+0px  1px 0px white,
+-1px  0px 0px white,
+0px -1px 0px white;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente */
+    background-blend-mode: overlay;
+    background-image: url('imagenes/decoracion-pastelera.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+    }
+    
+    .catalog {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas */
+    justify-content:space-between; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    }
+    
+    .tarjetas{
+    flex: 1 1 300px; /* Las tarjetas ocupan un mínimo de 300px y se adaptan al espacio disponible */
+    max-width: 300px; /* Ancho máximo de las tarjetas */
+    background-color: #fbddfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #640269;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tarjetas .tarjeta-title{
+        text-align: center;
+        color:#bf34c6;
+        border-radius: 8px;
+        text-shadow: 1px  0px 0px black,
+        0px  1px 0px white,
+       -1px  0px 0px white,
+        0px -1px 0px white;
+    }
+    
+    .tarjetas img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 250px; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+    }
+    
+    /* Efecto hover en las tarjetas */
+    .tarjetas:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 768px) {
+        .catalog { /*selecciona cualquier  elemento con esta clase.*/
+            flex-direction: column; /*cambia la dirección del flujo de las tarjetas para que se apilen en una columna vertical.*/
+        }
+    }

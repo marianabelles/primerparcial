@@ -1,0 +1,428 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Fondo general */
+}
+
+/* Encabezado */
+header {
+    background-color: #640269;
+    color: #ced4da;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(7, 7, 7, 0.986);
+}
+header img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+nav ul li {
+    margin: 0 2px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #8b0792;
+    border-radius: 1px;
+}
+
+.imagen-cabecera {
+    border-radius: 50px;
+    margin-top: -10px;
+    margin-right: 50px;
+}
+/*Fondo de la sección visitar pastelería */
+.background {
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente */
+    background-blend-mode: overlay;
+    background-image: url('imagenes/Diplomado-reposteria-y-pasteleria.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+}
+.background a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.background-button {
+    padding: 10px 20px;
+    background-color: #640269;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.background-button:hover {
+    background-color: #cc43d3;
+}
+
+.background h2{
+    color: black;
+    font-size: 2rem;
+    border-radius: 8px;
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px white,
+   -1px  0px 0px white,
+    0px -1px 0px white;
+}
+.background p{
+    color: rgb(85, 7, 85);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* Secciones */
+section {
+    padding: 100px 20px;
+    background-color: #f4d7f5;
+    margin-top: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#640269;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px white,
+   -1px  0px 0px white,
+    0px -1px 0px white;
+}
+/* seccion1 */
+#seccion1 {
+    height: 500px;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente */
+    background-blend-mode: overlay;
+    background-image: url('imagenes/800_imagen.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /*Centra el texto */
+    align-items: center;
+    color:rgb(85, 7, 85);
+    text-shadow:
+     0 0 10px rgba(255, 255, 255, 0.8),
+     0 0 20px rgba(255, 255, 255, 0.6),
+     0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+
+/* seccion3 */
+#seccion3{
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente */
+    background-blend-mode: overlay;
+    background-image: url('imagenes/decoracion-pastelera.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+}
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas */
+    justify-content:space-between; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+.card-icon {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.card-button {
+    padding: 10px 20px;
+    background-color: #640269;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+}
+
+.card-button:hover {
+    background-color: #363738;
+}
+
+.card1 {
+    flex: 1 1 300px; /* Las tarjetas ocupan un mínimo de 300px y se adaptan al espacio disponible */
+    max-width: 300px; /* Ancho máximo de las tarjetas */
+    background-color: #fbddfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #640269;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1 img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 250px; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card1 a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #640269;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card1 a:hover {
+    background-color: #540056;
+}
+
+/* Efecto hover en las tarjetas */
+.card1:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* seccion4 */
+.catalog1-container{
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas */
+    justify-content:center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+/*lo mismo que en le seccion3 */
+.card1 {
+    flex: 1 1 300px; /* Las tarjetas ocupan un mínimo de 300px y se adaptan al espacio disponible */
+    max-width: 300px; /* Ancho máximo de las tarjetas */
+    background-color: #fbddfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #640269;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*lo mismo que en le seccion3 */
+.card1 img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 250px; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+/* seccion5 */
+#seccion5 {
+    padding: 20px;
+}
+#seccion5 .card1:hover{
+    transform: scale(1.2);
+}
+.card1 .card-title{
+    text-align: center;
+    color:#bf34c6;
+    border-radius: 8px;
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px white,
+   -1px  0px 0px white,
+    0px -1px 0px white;
+}
+
+
+#seccion6 {
+    background-image: url(imagenes/Diplomado-reposteria-y-pasteleria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 140px 140px;
+    padding-left: 5px;
+    position: relative; /* Necesario para que el pseudo-elemento esté posicionado correctamente */
+}
+
+/* Superposición semitransparente */
+#seccion6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    z-index: 1; /* Coloca la superposición debajo del texto */
+}
+#seccion6 h2{
+    position: relative; /* Asegura que el texto esté por encima de la superposición */
+    z-index: 2; /* Coloca el texto por encima de la superposición */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ajusta el color y tamaño de la sombra del texto */
+    font-size: 1.5rem; /* Puedes ajustar el tamaño del texto si es necesario */
+    text-align: center; /*Centra el texto */
+}
+/* Ajustar el estilo del texto */
+#seccion6 p, #seccion6 ul {
+    position: relative; /* Asegura que el texto esté por encima de la superposición */
+    z-index: 2; /* Coloca el texto por encima de la superposición */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ajusta el color y tamaño de la sombra del texto */
+    font-size: 1rem; /* Puedes ajustar el tamaño del texto si es necesario */
+    text-align: center;
+}
+
+#seccion7 {
+    background-image: url(imagenes/Diplomado-reposteria-y-pasteleria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 5px;
+    position: relative; /* Necesario para que el pseudo-elemento esté posicionado correctamente */
+}
+
+/* Superposición semitransparente */
+#seccion7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    z-index: 1; /* Coloca la superposición debajo del texto */
+}
+
+/* Ajustar el estilo del texto */
+#seccion7 h2, #seccion7 p {
+    position: relative; /* Asegura que el texto esté por encima de la superposición */
+    z-index: 2; /* Coloca el texto por encima de la superposición */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ajusta el color y tamaño de la sombra del texto */
+    font-size: 1.5rem; /* Puedes ajustar el tamaño del texto si es necesario */
+    text-align: center; /* Centra el texto */
+}
+/* Footer */
+footer {
+    background-color:rgb(211, 134, 202);
+    color: black;
+    text-align: center;
+    display: flex;
+    margin-top: 60px;
+    padding: 10px 25px 25px;
+    height: 350px;
+    justify-content: space-between;
+}
+
+footer .form-container {
+    background-color:rgb(211, 134, 202);
+    text-align: center;
+    border: 20px;
+    padding: 20px;
+}
+footer .form-container input[type="submit"] {
+    background-color:#640269;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .form-container input[type="submit"]:hover {
+    background-color: #e277e8;
+}
+
+footer .social-icons a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer h2{
+   color: rgb(243, 189, 243);
+   text-shadow: 1px  0px 0px black,
+   0px  1px 0px black,
+  -1px  0px 0px black,
+   0px -1px 0px black;
+}
+
+footer .map {
+    margin-top: 20px;
+}
+
+footer p {
+    color: rgb(243, 189, 243);
+    margin-top: 20px;
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px black,
+   -1px  0px 0px black,
+    0px -1px 0px black;
+}
+
+/* Media Queries para diseño responsivo */
+/* Este es un media query que establece que las reglas CSS dentro de sus llaves { ... } se aplicarán solo si el ancho de la pantalla es 768 píxeles o menos. 
+Esto suele estar dirigido a dispositivos móviles o tabletas. */
+@media (max-width: 768px) {
+    nav ul { /*selecciona cualquier  elemento con esta clase.*/
+        flex-direction: column; /* los elementos de la lista (<li>) se apilarán uno debajo del otro,en lugar de estar alineados uno al lado del otro, lo cual es más adecuado para pantallas pequeñas. */
+    }
+    .catalog-container { /*selecciona cualquier  elemento con esta clase.*/
+        flex-direction: column; /*cambia la dirección del flujo de las tarjetas para que se apilen en una columna vertical.*/
+    }
+    .catalog1-container { /*selecciona cualquier  elemento con esta clase.*/
+        flex-direction: column; /*cambia la dirección del flujo de las tarjetas para que se apilen en una columna vertical.*/
+    }
+
+    .form-container {/*selecciona cualquier  elemento con esta clase.*/
+        flex-direction: column; /*hace que los elementos dentro del contenedor del formulario se organicen verticalmente*/
+    }
+}
